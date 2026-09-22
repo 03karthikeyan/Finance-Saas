@@ -1,0 +1,35 @@
+{
+    "name": "FinanceMaster Pro (FMP)",
+    "short_name": "FinanceMaster Pro",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0A0E17",
+    "theme_color": "#2563EB",
+    "description": "FinanceMaster Pro (FMP) - Smart SaaS for Finance. Powered by Mediawave Technologies.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

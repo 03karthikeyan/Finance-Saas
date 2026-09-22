@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceMaster Pro — Smart SaaS for Daily, Weekly & Monthly Finance Management</title>
+  <meta name="description"
+    content="FinanceMaster Pro is an enterprise SaaS platform built for finance companies offering daily, weekly, and monthly loan collections. Manage branches, agents, borrowers, and payments from one system.">
+
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" type="image/png" href="assets/fmp_emblem.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. Sticky Header & Navbar
+       ========================================================================= -->
+  <header class="header-sticky" id="mainHeader">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#hero" class="nav-brand" aria-label="FinanceMaster Pro Home">
+          <img src="assets/FMP.png" alt="FinanceMaster Pro" class="brand-logo-img" height="44">
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+          <li><a href="#multi-branch" class="nav-link">Multi-Branch</a></li>
+          <li><a href="#calculator" class="nav-link">Estimator</a></li>
+        </ul>
+
+        <!-- Action CTAs -->
+        <div class="nav-actions">
+          <a href="#demo-section" class="btn btn-primary btn-sm btn-desktop-only">
+            Request a Demo
+          </a>
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/FMP.png" alt="FinanceMaster Pro" class="brand-logo-img" height="38">
+      </a>
+    </div>
+    <ul style="display:flex; flex-direction:column; gap:0.35rem; margin-top:0.5rem;">
+      <li><a href="#features" class="mobile-nav-link">Features <span>›</span></a></li>
+      <li><a href="#solutions" class="mobile-nav-link">Role Solutions <span>›</span></a></li>
+      <li><a href="#schemes" class="mobile-nav-link">Finance Schemes <span>›</span></a></li>
+      <li><a href="#how-it-works" class="mobile-nav-link">How It Works <span>›</span></a></li>
+      <li><a href="#dashboard" class="mobile-nav-link">Live Dashboard <span>›</span></a></li>
+      <li><a href="#collections" class="mobile-nav-link">Daily Collections <span>›</span></a></li>
+      <li><a href="#multi-branch" class="mobile-nav-link">Multi-Branch System <span>›</span></a></li>
+      <li><a href="#calculator" class="mobile-nav-link">Loan Estimator <span>›</span></a></li>
+      <li><a href="#mobile-apps" class="mobile-nav-link">Mobile Apps <span>›</span></a></li>
+      <li><a href="#security" class="mobile-nav-link">Security <span>›</span></a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ <span>›</span></a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:1rem;">
+      <a href="#demo-section" class="btn btn-primary" style="width: 100%;">
+        Request a Demo
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. Hero Section
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-blob-1"></div>
+    <div class="hero-glow-blob-2"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Content -->
+        <div class="hero-content reveal-init">
+          <div class="hero-tag-badge">
+            <span class="pulse-dot"></span>
+            <span>Smart SaaS for Daily, Weekly & Monthly Finance</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Smart Finance Management. <br>
+            <span class="gradient-text">Simplified.</span>
+          </h1>
+
+          <p class="hero-subtext">
+            FinanceMaster Pro is an all-in-one finance management platform built for daily, weekly and monthly finance
+            companies to manage branches, agents, borrowers, loans, collections and payments from one powerful system.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#demo-section" class="btn btn-primary btn-lg" id="heroPrimaryCta">
+              Request a Demo
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              Explore Features
+            </a>
+          </div>
+
+          <!-- Feature Indicators -->
+          <div class="hero-indicators">
+            <div class="indicator-item">
+              <div class="indicator-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M3 21h18M3 7v14M21 7v14M6 11h3M6 15h3M15 11h3M15 15h3M9 3l6 4H3l6-4z" />
+                </svg>
+              </div>
+              <span class="indicator-text">Multi-Branch Management</span>
+            </div>
+
+            <div class="indicator-item">
+              <div class="indicator-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span class="indicator-text">Loan Management</span>
+            </div>
+
+            <div class="indicator-item">
+              <div class="indicator-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <span class="indicator-text">Agent Collections</span>
+            </div>
+
+            <div class="indicator-item">
+              <div class="indicator-icon">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <span class="indicator-text">Customer Portal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Preview -->
+        <div class="hero-visual reveal-init">
+          <!-- Floating Feature Badge 1 -->
+          <div class="floating-hero-pill floating-pill-1">
+            <div
+              style="width:36px; height:36px; border-radius:50%; background:#ecfdf5; color:#059669; display:flex; align-items:center; justify-content:center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:0.75rem; color:#64748B; font-weight:600;">Live Collection Synced</div>
+              <div style="font-size:0.925rem; font-weight:800; color:#0F172A;">₹1,85,500 Today</div>
+            </div>
+          </div>
+
+          <!-- Floating Feature Badge 2 -->
+          <div class="floating-hero-pill floating-pill-2">
+            <div
+              style="width:36px; height:36px; border-radius:50%; background:#eff6ff; color:#2563EB; display:flex; align-items:center; justify-content:center;">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:0.75rem; color:#64748B; font-weight:600;">Active Network</div>
+              <div style="font-size:0.925rem; font-weight:800; color:#0F172A;">8 Branches • 42 Agents</div>
+            </div>
+          </div>
+
+          <!-- Hero UI Mockup Frame -->
+          <div class="hero-dashboard-frame">
+            <div class="hero-dashboard-header">
+              <div class="window-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div
+                style="font-size:0.75rem; font-weight:700; color:#64748B; font-family:var(--font-heading); display:flex; align-items:center; gap:6px;">
+                <img src="assets/fmp_emblem.png" alt="Icon" width="16" height="16">
+                FINANCEMASTER PRO LIVE CONSOLE
+              </div>
+              <span class="badge badge-success">Live Network</span>
+            </div>
+
+            <!-- Mini Live Stat Grid -->
+            <div class="hero-card-grid">
+              <div class="mini-stat-card">
+                <div class="mini-stat-label">Daily Collection</div>
+                <div class="mini-stat-value">₹1,85,500</div>
+                <div class="mini-stat-trend">
+                  <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                  </svg>
+                  +14.2% vs yesterday
+                </div>
+              </div>
+
+              <div class="mini-stat-card">
+                <div class="mini-stat-label">Total Active Loans</div>
+                <div class="mini-stat-value">₹24,50,000</div>
+                <div class="mini-stat-trend" style="color:#2563EB;">
+                  1,248 Verified Borrowers
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Schedule & Route Map Preview -->
+            <div
+              style="background:var(--color-slate-50); border:1px solid var(--color-slate-200); border-radius:var(--radius-md); padding:0.85rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+                <span style="font-size:0.75rem; font-weight:700; color:var(--color-slate-700);">Today's Collection
+                  Routes (8 Branches)</span>
+                <span style="font-size:0.7rem; color:var(--color-primary); font-weight:600;">94% On-Time</span>
+              </div>
+
+              <!-- Route bar 1 -->
+              <div style="margin-bottom:0.5rem;">
+                <div
+                  style="display:flex; justify-content:space-between; font-size:0.725rem; color:var(--color-slate-600); margin-bottom:2px;">
+                  <span>Central Market (Agent: Suresh P.)</span>
+                  <span style="font-weight:700; color:var(--color-slate-900);">₹52,400 / ₹60,000</span>
+                </div>
+                <div style="height:5px; background:var(--color-slate-200); border-radius:10px; overflow:hidden;">
+                  <div style="width:87%; height:100%; background:var(--grad-primary); border-radius:10px;"></div>
+                </div>
+              </div>
+
+              <!-- Route bar 2 -->
+              <div>
+                <div
+                  style="display:flex; justify-content:space-between; font-size:0.725rem; color:var(--color-slate-600); margin-bottom:2px;">
+                  <span>North City Hub (Agent: Vikram S.)</span>
+                  <span style="font-weight:700; color:var(--color-slate-900);">₹41,200 / ₹45,000</span>
+                </div>
+                <div style="height:5px; background:var(--color-slate-200); border-radius:10px; overflow:hidden;">
+                  <div
+                    style="width:91%; height:100%; background:linear-gradient(90deg, #0ea5e9, #10b981); border-radius:10px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. Problem Section
+       ========================================================================= -->
+  <section class="section section-alt" id="problems">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Finance Industry Challenges</span>
+        <h2 class="section-title">
+          Managing a Finance Business <br>
+          <span class="gradient-text">Shouldn't Be Complicated.</span>
+        </h2>
+        <p class="section-desc">
+          Finance and micro-lending operations struggle every day with disconnected tools, lost records, and untracked
+          field collections.
+        </p>
+      </div>
+
+      <!-- Problem Cards Grid -->
+      <div class="problem-grid reveal-init">
+        <!-- Problem 1 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Manual Collection Tracking</h3>
+          <p class="problem-desc">
+            Relying on physical paper notebooks and registers leads to lost entries, ink smudges, unrecorded cash, and
+            delayed auditing.
+          </p>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Difficult Borrower Management</h3>
+          <p class="problem-desc">
+            Keeping track of borrower KYC, guarantor details, active loans, and payment history across different folders
+            is disorganized and chaotic.
+          </p>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Multiple Branch Confusion</h3>
+          <p class="problem-desc">
+            Branch managers operating in silos make it impossible for company owners to know consolidated cash in hand
+            or actual daily recovery figures.
+          </p>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Agent Collection Tracking Problems</h3>
+          <p class="problem-desc">
+            No real-time way to verify if field collection agents actually visited borrowers, collected payments, or are
+            carrying un-deposited cash.
+          </p>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Loan Calculation Mistakes</h3>
+          <p class="problem-desc">
+            Manual calculation of daily interest, penalty charges, processing fees, and odd-day installments leads to
+            costly revenue leakage.
+          </p>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="problem-card">
+          <div class="problem-icon-wrapper">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="problem-title">Pending Due & Defaulter Tracking</h3>
+          <p class="problem-desc">
+            Without automated alerts, overdue installments pile up unnoticed until bad debts create severe working
+            capital crisis.
+          </p>
+        </div>
+      </div>
+
+      <!-- Solution Bridge Banner -->
+      <div class="solution-bridge-banner reveal-init">
+        <h3 class="solution-bridge-title">
+          FinanceMaster Pro brings everything together in one powerful platform.
+        </h3>
+        <p class="solution-bridge-sub">
+          Eliminate paper chaos, streamline multi-branch operations, empower field agents with instant mobile tools, and
+          give borrowers full digital transparency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Role-Based Solutions Section
+       ========================================================================= -->
+  <section class="section" id="solutions">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Role-Based Architecture</span>
+        <h2 class="section-title">
+          Tailored Workspaces for <br>
+          <span class="gradient-text">Every Role in Your Business</span>
+        </h2>
+        <p class="section-desc">
+          FinanceMaster Pro creates dedicated, high-efficiency workflows for administrators, field collection agents,
+          and loan customers.
+        </p>
+      </div>
+
+      <div class="roles-grid reveal-init">
+        <!-- Role 1: Company Admin -->
+        <div class="role-card role-admin featured-role">
+          <span class="role-badge-top">Full Control</span>
+          <div class="role-header">
+            <div class="role-avatar">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="role-title">Company Admin</h3>
+              <span class="role-tagline">Executive Leadership & Control</span>
+            </div>
+          </div>
+
+          <p class="role-description">
+            Complete control over your finance business across all branches and agents.
+          </p>
+
+          <ul class="role-feature-list">
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Executive Business Dashboard</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Agent CRUD & Staff Management</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Borrower CRUD & Credit Profiling</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Loan Scheme CRUD (Daily/Weekly/Monthly)</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Multiple Branch CRUD & Auditing</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Real-Time Collection Monitoring</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Branch-Wise & Agent Analytics</span>
+            </li>
+          </ul>
+
+          <a href="#demo-section" class="btn btn-primary" style="width:100%;">
+            Manage Your Business
+          </a>
+        </div>
+
+        <!-- Role 2: Agent -->
+        <div class="role-card role-agent">
+          <div class="role-header">
+            <div class="role-avatar">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="role-title">Agent</h3>
+              <span class="role-tagline">Field Collection & Operations</span>
+            </div>
+          </div>
+
+          <p class="role-description">
+            Make daily collections simple, fast, and 100% auditable in the field.
+          </p>
+
+          <ul class="role-feature-list">
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Agent Mobile App & Secure Login</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Daily Route Collection List</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Instant Payment Collect & SMS Receipt</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Add New Borrower with Photo KYC</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Disburse Loan & Schedule Setup</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Pending Due & Defaulter Alerts</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Live End-of-Day Cash Settlement</span>
+            </li>
+          </ul>
+
+          <a href="#demo-section" class="btn btn-secondary" style="width:100%;">
+            Simplify Collections
+          </a>
+        </div>
+
+        <!-- Role 3: Customer -->
+        <div class="role-card role-customer">
+          <div class="role-header">
+            <div class="role-avatar">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="role-title">Customer</h3>
+              <span class="role-tagline">Borrower Self-Service Portal</span>
+            </div>
+          </div>
+
+          <p class="role-description">
+            Give customers complete visibility and trust into their loan accounts.
+          </p>
+
+          <ul class="role-feature-list">
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Secure OTP & Passcode Login</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Active Loan Details & Passbook</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Paid Amount vs Remaining Balance</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Pending Due & Upcoming Schedule</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Assigned Agent & Branch Contact</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Loan Estimation & Top-Up Eligibility</span>
+            </li>
+            <li class="role-feature-item">
+              <div class="role-check-icon"><svg width="12" height="12" fill="none" stroke="currentColor"
+                  stroke-width="3" viewBox="0 0 24 24">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <span>Download Digital Payment Receipts</span>
+            </li>
+          </ul>
+
+          <a href="#demo-section" class="btn btn-secondary" style="width:100%;">
+            Keep Customers Informed
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. Loan Schemes Section (Daily / Weekly / Monthly Matrix)
+       ========================================================================= -->
+  <section class="section section-alt" id="schemes">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Flexible Loan Schemes</span>
+        <h2 class="section-title">
+          Designed for All Collection Models: <br>
+          <span class="gradient-text">Daily, Weekly & Monthly</span>
+        </h2>
+        <p class="section-desc">
+          FinanceMaster Pro natively understands the mathematical logic, holidays, and route behaviors for each finance
+          product.
+        </p>
+      </div>
+
+      <div class="scheme-matrix-grid reveal-init">
+        <!-- Daily Scheme -->
+        <div class="scheme-card popular-scheme">
+          <span class="role-badge-top">Most Popular</span>
+          <div class="scheme-header">
+            <h3 class="scheme-title">Daily Finance</h3>
+            <span class="scheme-ideal-for">For Vegetable Markets, Small Shops & Hawkers</span>
+          </div>
+
+          <div class="scheme-specs-list">
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Collection Frequency</span>
+              <span class="scheme-spec-val" style="color:var(--color-primary);">Everyday / 100 Days</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Route Optimization</span>
+              <span class="scheme-spec-val">Street-by-Street Route</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Calculation Mode</span>
+              <span class="scheme-spec-val">Fixed Daily Installment</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Agent Handover</span>
+              <span class="scheme-spec-val">Daily Evening Audit</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Defaulter Grace</span>
+              <span class="scheme-spec-val">Same-Day SMS Alert</span>
+            </div>
+          </div>
+
+          <a href="#calculator" class="btn btn-primary btn-sm" style="width:100%;">
+            Calculate Daily Scheme
+          </a>
+        </div>
+
+        <!-- Weekly Scheme -->
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <h3 class="scheme-title">Weekly Finance</h3>
+            <span class="scheme-ideal-for">For Weekly Market Vendors & Self-Help Groups</span>
+          </div>
+
+          <div class="scheme-specs-list">
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Collection Frequency</span>
+              <span class="scheme-spec-val" style="color:#0891B2;">Weekly (12-24 Weeks)</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Route Optimization</span>
+              <span class="scheme-spec-val">Zone / Cluster Based</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Calculation Mode</span>
+              <span class="scheme-spec-val">Equal Weekly Recovery</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Agent Handover</span>
+              <span class="scheme-spec-val">Weekly Cash Settlement</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Defaulter Grace</span>
+              <span class="scheme-spec-val">48-Hour Grace Notice</span>
+            </div>
+          </div>
+
+          <a href="#calculator" class="btn btn-secondary btn-sm" style="width:100%;">
+            Calculate Weekly Scheme
+          </a>
+        </div>
+
+        <!-- Monthly Scheme -->
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <h3 class="scheme-title">Monthly Finance</h3>
+            <span class="scheme-ideal-for">For Salaried Individuals & Business Loans</span>
+          </div>
+
+          <div class="scheme-specs-list">
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Collection Frequency</span>
+              <span class="scheme-spec-val" style="color:#7C3AED;">Monthly (6-36 Months)</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Route Optimization</span>
+              <span class="scheme-spec-val">Branch Counter / UPI / Agent</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Calculation Mode</span>
+              <span class="scheme-spec-val">Reducing Balance / Flat EMI</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Agent Handover</span>
+              <span class="scheme-spec-val">Monthly Ledger Close</span>
+            </div>
+            <div class="scheme-spec-row">
+              <span class="scheme-spec-label">Defaulter Grace</span>
+              <span class="scheme-spec-val">Automated Penalty Logic</span>
+            </div>
+          </div>
+
+          <a href="#calculator" class="btn btn-secondary btn-sm" style="width:100%;">
+            Calculate Monthly Scheme
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. How It Works Section
+       ========================================================================= -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Step-By-Step Process</span>
+        <h2 class="section-title">
+          How FinanceMaster Pro <br>
+          <span class="gradient-text">Powers Your Operations</span>
+        </h2>
+        <p class="section-desc">
+          Get your finance business configured and running on cloud in four simple, guided steps.
+        </p>
+      </div>
+
+      <div class="how-it-works-grid reveal-init">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number-badge">01</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="step-title">Create Your Company</h3>
+          <p class="step-desc">
+            Set up your parent finance company, company profile, and establish regional branches with localized
+            managers.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number-badge">02</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="step-title">Configure Loan Schemes</h3>
+          <p class="step-desc">
+            Configure flexible daily, weekly, or monthly finance schemes with custom interest rates, tenure, and late
+            fees.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number-badge">03</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="step-title">Manage Agents & Borrowers</h3>
+          <p class="step-desc">
+            Create field agent accounts, assign them route-wise, onboard borrowers with KYC, and disburse loans.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number-badge">04</div>
+          <div class="step-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="step-title">Track Collections</h3>
+          <p class="step-desc">
+            Agents collect payments in the field while administrators monitor real-time recovery, dues, and cash audits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Comprehensive 12-Feature Grid
+       ========================================================================= -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Enterprise Capabilities</span>
+        <h2 class="section-title">
+          Everything Your <br>
+          <span class="gradient-text">Finance Business Needs</span>
+        </h2>
+        <p class="section-desc">
+          Built specifically for finance and lending operations with every tool required for rapid growth and
+          compliance.
+        </p>
+      </div>
+
+      <div class="features-grid reveal-init">
+        <!-- 1. Loan Management -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Loan Management</h3>
+          <p class="feature-box-desc">Create, approve, disburse, and manage full lifecycle of micro and collateralized
+            loans.</p>
+        </div>
+
+        <!-- 2. Daily Finance -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Daily Finance</h3>
+          <p class="feature-box-desc">Specialized collection ledgers and automatic day-count calculators for daily
+            collection schemes.</p>
+        </div>
+
+        <!-- 3. Weekly Finance -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Weekly Finance</h3>
+          <p class="feature-box-desc">Automated weekly collection cycles with custom grace periods and holiday handling.
+          </p>
+        </div>
+
+        <!-- 4. Monthly Finance -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Monthly Finance</h3>
+          <p class="feature-box-desc">Standard EMI and interest-only monthly financing with automated repayment
+            schedules.</p>
+        </div>
+
+        <!-- 5. Multi-Branch Management -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Multi-Branch Management</h3>
+          <p class="feature-box-desc">Consolidate multiple branches under one headquarters with branch-wise cash drawers
+            and permissions.</p>
+        </div>
+
+        <!-- 6. Agent Management -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Agent Management</h3>
+          <p class="feature-box-desc">Track agent routes, assign borrower portfolios, set targets, and monitor
+            collection efficiency.</p>
+        </div>
+
+        <!-- 7. Borrower Management -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Borrower Management</h3>
+          <p class="feature-box-desc">Centralized borrower database with Aadhaar/KYC storage, guarantor records, and
+            credit history.</p>
+        </div>
+
+        <!-- 8. Collection Tracking -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Collection Tracking</h3>
+          <p class="feature-box-desc">Instant real-time sync of cash collected by field agents with automated digital
+            receipt generation.</p>
+        </div>
+
+        <!-- 9. Pending Due Tracking -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Pending Due Tracking</h3>
+          <p class="feature-box-desc">Automated overdue alerts, aging analysis, and prioritized defaulter recovery lists
+            for field agents.</p>
+        </div>
+
+        <!-- 10. Loan Estimation -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Loan Estimation</h3>
+          <p class="feature-box-desc">Instant loan calculators that generate accurate daily/weekly repayment schedules
+            before disbursement.</p>
+        </div>
+
+        <!-- 11. Customer Portal -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Customer Portal</h3>
+          <p class="feature-box-desc">Self-service digital passbook where borrowers can check due dates, balances, and
+            download receipts.</p>
+        </div>
+
+        <!-- 12. Business Dashboard -->
+        <div class="feature-box">
+          <div class="feature-box-icon">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+            </svg>
+          </div>
+          <h3 class="feature-box-title">Business Dashboard</h3>
+          <p class="feature-box-desc">Consolidated KPI views covering total loans, today's recovery, profit margins, and
+            branch rankings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Large Dashboard Showcase Section
+       ========================================================================= -->
+  <section class="section section-dark" id="dashboard">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag tag-dark">Executive Intelligence</span>
+        <h2 class="section-title">
+          See Your Entire Finance Business <br>
+          <span class="gradient-text-light">at a Glance</span>
+        </h2>
+        <p class="section-desc">
+          Real-time visibility across all 8 branches, 42 field agents, and ₹24.5L active loan portfolio.
+        </p>
+      </div>
+
+      <!-- Dashboard Mockup Showcase -->
+      <div class="dashboard-showcase-wrapper reveal-init">
+        <!-- Top Toolbar inside mockup -->
+        <div class="dashboard-nav-bar">
+          <div class="dashboard-nav-left">
+            <div class="dashboard-title-tag">
+              <img src="assets/fmp_emblem.png" alt="Icon" width="20" height="20">
+              FinanceMaster <span>Live Console</span>
+            </div>
+            <span class="badge badge-success">
+              <span class="badge-dot"></span> Real-Time Cloud Sync
+            </span>
+          </div>
+
+          <div class="dashboard-tabs-switch">
+            <button class="d-tab-btn active" id="btnChartWeekly">Weekly View</button>
+            <button class="d-tab-btn" id="btnChartMonthly">Monthly View</button>
+          </div>
+        </div>
+
+        <!-- Branch Selector Filter Chips -->
+        <div class="branch-chips-row">
+          <span
+            style="font-size:0.75rem; color:#94A3B8; font-weight:700; text-transform:uppercase; margin-right:4px;">Filter
+            Branch:</span>
+          <button class="branch-chip-btn active" data-branch="all">All 8 Branches</button>
+          <button class="branch-chip-btn" data-branch="central">Central Market HQ</button>
+          <button class="branch-chip-btn" data-branch="north">North City Hub</button>
+          <button class="branch-chip-btn" data-branch="east">East Industrial Zone</button>
+          <button class="branch-chip-btn" data-branch="south">South Extension</button>
+        </div>
+
+        <!-- Exact Required KPI Metric Cards (6 cards with Dynamic IDs) -->
+        <div class="dashboard-kpi-grid">
+          <!-- 1. TOTAL LOANS -->
+          <div class="kpi-card">
+            <div class="kpi-label">TOTAL LOANS</div>
+            <div class="kpi-value" id="dashKpiTotalLoans">₹24,50,000</div>
+            <div class="kpi-sub positive">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+              +18.4% this mo
+            </div>
+          </div>
+
+          <!-- 2. TODAY'S COLLECTION -->
+          <div class="kpi-card" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(14, 165, 233, 0.08);">
+            <div class="kpi-label" style="color: #38bdf8;">TODAY'S COLLECTION</div>
+            <div class="kpi-value" id="dashKpiTodayCol" style="color: #38bdf8;">₹1,85,500</div>
+            <div class="kpi-sub positive">
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+              94% of target
+            </div>
+          </div>
+
+          <!-- 3. PENDING AMOUNT -->
+          <div class="kpi-card">
+            <div class="kpi-label" style="color: #f87171;">PENDING AMOUNT</div>
+            <div class="kpi-value" id="dashKpiPending" style="color: #fca5a5;">₹3,25,000</div>
+            <div class="kpi-sub" style="color: #f87171;">
+              34 accounts overdue
+            </div>
+          </div>
+
+          <!-- 4. ACTIVE BORROWERS -->
+          <div class="kpi-card">
+            <div class="kpi-label">ACTIVE BORROWERS</div>
+            <div class="kpi-value" id="dashKpiBorrowers">1,248</div>
+            <div class="kpi-sub positive">
+              +42 new this week
+            </div>
+          </div>
+
+          <!-- 5. ACTIVE AGENTS -->
+          <div class="kpi-card">
+            <div class="kpi-label">ACTIVE AGENTS</div>
+            <div class="kpi-value" id="dashKpiAgents">42</div>
+            <div class="kpi-sub positive">
+              100% on duty
+            </div>
+          </div>
+
+          <!-- 6. BRANCHES -->
+          <div class="kpi-card">
+            <div class="kpi-label">BRANCHES</div>
+            <div class="kpi-value" id="dashKpiBranches">8</div>
+            <div class="kpi-sub" style="color: #94a3b8;">
+              Centralized HQ
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Body: Chart + Branch Performance -->
+        <div class="dashboard-body-grid">
+          <!-- Chart Panel -->
+          <div class="d-panel">
+            <div class="d-panel-header">
+              <span class="d-panel-title">Daily Collection Trendline (₹)</span>
+              <span style="font-size:0.75rem; color:#94a3b8;">Peak Collection: ₹1,94,000</span>
+            </div>
+            <div class="chart-container" id="collectionChart">
+              <!-- SVG chart rendered via js/app.js -->
+            </div>
+          </div>
+
+          <!-- Branch Performance Panel -->
+          <div class="d-panel">
+            <div class="d-panel-header">
+              <span class="d-panel-title">Branch Performance</span>
+              <span style="font-size:0.75rem; color:#38bdf8; font-weight:600;">8 Branches</span>
+            </div>
+            <div class="progress-list" id="branchPerformanceList">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Bottom: Agent Leaderboard & Recent Live Stream -->
+        <div class="dashboard-bottom-grid">
+          <!-- Agent Performance -->
+          <div class="d-panel">
+            <div class="d-panel-header">
+              <span class="d-panel-title">Top Field Agents Today</span>
+              <span style="font-size:0.75rem; color:#34d399;">Active Routes</span>
+            </div>
+            <div class="live-feed-list">
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial">VS</div>
+                  <div>
+                    <div class="live-feed-name">Vikram Sharma</div>
+                    <div class="live-feed-meta">North City Hub • 38 Collections</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">₹34,800 <span
+                    style="font-size:0.75rem; color:#94a3b8; display:block; font-weight:normal;">(98% Rec)</span></div>
+              </div>
+
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial">SP</div>
+                  <div>
+                    <div class="live-feed-name">Suresh Patil</div>
+                    <div class="live-feed-meta">Central Market • 32 Collections</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">₹31,500 <span
+                    style="font-size:0.75rem; color:#94a3b8; display:block; font-weight:normal;">(95% Rec)</span></div>
+              </div>
+
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial">MS</div>
+                  <div>
+                    <div class="live-feed-name">Manoj Singh</div>
+                    <div class="live-feed-meta">East Zone • 29 Collections</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">₹28,200 <span
+                    style="font-size:0.75rem; color:#94a3b8; display:block; font-weight:normal;">(93% Rec)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Collections Feed -->
+          <div class="d-panel">
+            <div class="d-panel-header">
+              <span class="d-panel-title">Recent Verified Collections</span>
+              <span class="badge badge-success"><span class="badge-dot"></span> Live Feed</span>
+            </div>
+            <div class="live-feed-list">
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial" style="background:rgba(16,185,129,0.2); color:#34d399;">✓</div>
+                  <div>
+                    <div class="live-feed-name">Rajesh Kumar (LN-84920)</div>
+                    <div class="live-feed-meta">Agent: Vikram Sharma • North City</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">+₹1,200 <span
+                    style="font-size:0.75rem; color:#64748B; display:block; font-weight:normal;">2 mins ago</span></div>
+              </div>
+
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial" style="background:rgba(16,185,129,0.2); color:#34d399;">✓</div>
+                  <div>
+                    <div class="live-feed-name">Ananya Deshmukh (LN-84921)</div>
+                    <div class="live-feed-meta">Agent: Suresh Patil • Central Market</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">+₹4,500 <span
+                    style="font-size:0.75rem; color:#64748B; display:block; font-weight:normal;">7 mins ago</span></div>
+              </div>
+
+              <div class="live-feed-item">
+                <div class="live-feed-borrower">
+                  <div class="live-avatar-initial" style="background:rgba(16,185,129,0.2); color:#34d399;">✓</div>
+                  <div>
+                    <div class="live-feed-name">Pooja Verma (LN-84924)</div>
+                    <div class="live-feed-meta">Agent: Manoj Singh • East Zone</div>
+                  </div>
+                </div>
+                <div class="live-feed-amount">+₹1,500 <span
+                    style="font-size:0.75rem; color:#64748B; display:block; font-weight:normal;">14 mins ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Daily Collection Section & Live Data Table
+       ========================================================================= -->
+  <section class="section" id="collections">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Auditable Operations</span>
+        <h2 class="section-title">
+          Never Lose Track of a <br>
+          <span class="gradient-text">Collection Again.</span>
+        </h2>
+        <p class="section-desc">
+          Live collection logs with automated timestamps, field agent verification, and digital receipt generation.
+        </p>
+      </div>
+
+      <!-- 4 Summary Cards -->
+      <div class="collection-summary-cards reveal-init">
+        <div class="col-summary-card">
+          <div class="col-summary-icon col-icon-blue">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="col-summary-title">Today's Collection</div>
+            <div class="col-summary-val">₹1,85,500</div>
+          </div>
+        </div>
+
+        <div class="col-summary-card">
+          <div class="col-summary-icon col-icon-amber">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="col-summary-title">Pending Amount</div>
+            <div class="col-summary-val">₹3,25,000</div>
+          </div>
+        </div>
+
+        <div class="col-summary-card">
+          <div class="col-summary-icon col-icon-green">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="col-summary-title">Total Customers</div>
+            <div class="col-summary-val">1,248</div>
+          </div>
+        </div>
+
+        <div class="col-summary-card">
+          <div class="col-summary-icon col-icon-purple">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <div class="col-summary-title">Completed Collections</div>
+            <div class="col-summary-val">186 / 198</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection Table Card with Search & Filters -->
+      <div class="table-card-wrapper reveal-init">
+        <div class="table-toolbar">
+          <div class="table-search-input">
+            <svg width="18" height="18" fill="none" stroke="#64748B" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="tableSearch" placeholder="Search customer, agent, branch...">
+          </div>
+
+          <div class="table-filter-pills">
+            <button class="table-filter-btn active" data-filter="all">All Records</button>
+            <button class="table-filter-btn" data-filter="paid">Paid</button>
+            <button class="table-filter-btn" data-filter="pending">Pending</button>
+            <button class="table-filter-btn" data-filter="overdue">Overdue</button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="saas-table">
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Collection Status</th>
+                <th>Due Date / Time</th>
+                <th>Agent & Branch</th>
+                <th>Receipt</th>
+              </tr>
+            </thead>
+            <tbody id="collectionTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Multi-Branch Management Section
+       ========================================================================= -->
+  <section class="section section-alt" id="multi-branch">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Scalable Enterprise Hierarchy</span>
+        <h2 class="section-title">
+          One Company. Multiple Branches. <br>
+          <span class="gradient-text">One Powerful System.</span>
+        </h2>
+        <p class="section-desc">
+          Whether you manage 1 branch or 50 branches across multiple cities, FinanceMaster Pro unifies all branch books
+          into a centralized executive dashboard.
+        </p>
+      </div>
+
+      <!-- Hierarchy Visual Representation -->
+      <div class="hierarchy-diagram-container reveal-init">
+        <div class="hierarchy-tree">
+          <!-- Level 1: Central Company HQ -->
+          <div class="hierarchy-node node-main-company">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.9;">Centralized
+              Headquarters</div>
+            <div class="node-title">FinanceMaster Pro Central System</div>
+            <div class="node-subtitle">Unified Accounting • Global Policy Controls • Master Cash Ledger</div>
+          </div>
+
+          <!-- Connector Flow Indicator -->
+          <div style="color:var(--color-accent); font-weight:700; font-size:1.25rem;">
+            ↓
+          </div>
+
+          <!-- Level 2: Regional Branches -->
+          <div class="hierarchy-branch-row">
+            <div class="branch-node-card">
+              <span class="branch-node-badge">Branch 01</span>
+              <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:0.25rem;">Central Market HQ</h4>
+              <div class="branch-agents-badge">8 Agents • 290 Borrowers</div>
+            </div>
+
+            <div class="branch-node-card">
+              <span class="branch-node-badge">Branch 02</span>
+              <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:0.25rem;">North City Hub</h4>
+              <div class="branch-agents-badge">6 Agents • 210 Borrowers</div>
+            </div>
+
+            <div class="branch-node-card">
+              <span class="branch-node-badge">Branch 03</span>
+              <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:0.25rem;">East Industrial Zone</h4>
+              <div class="branch-agents-badge">6 Agents • 185 Borrowers</div>
+            </div>
+
+            <div class="branch-node-card">
+              <span class="branch-node-badge">Branch 04</span>
+              <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:0.25rem;">South Extension</h4>
+              <div class="branch-agents-badge">5 Agents • 160 Borrowers</div>
+            </div>
+          </div>
+
+          <!-- Connector Flow Indicator -->
+          <div style="color:var(--color-accent); font-weight:700; font-size:1.25rem;">
+            ↓
+          </div>
+
+          <!-- Level 3: Field Agents -->
+          <div class="hierarchy-node" style="width:100%; max-width:700px;">
+            <div style="font-size:0.75rem; text-transform:uppercase; color:#38bdf8; font-weight:700;">Field Agent Layer
+            </div>
+            <div class="node-title" style="font-size:1.1rem;">42 Field Agents Assigned to Dedicated Routes</div>
+            <div class="node-subtitle">Mobile App Enabled • Geo-Tagged Collection • Daily Cash Reconciliation</div>
+          </div>
+
+          <!-- Connector Flow Indicator -->
+          <div style="color:var(--color-accent); font-weight:700; font-size:1.25rem;">
+            ↓
+          </div>
+
+          <!-- Level 4: Borrowers & Collections -->
+          <div class="hierarchy-node"
+            style="width:100%; max-width:800px; background:rgba(16,185,129,0.12); border-color:rgba(16,185,129,0.3);">
+            <div style="font-size:0.75rem; text-transform:uppercase; color:#34d399; font-weight:700;">Customer &
+              Recovery Level</div>
+            <div class="node-title" style="font-size:1.1rem; color:#FFFFFF;">1,248 Borrowers Managed • Daily / Weekly /
+              Monthly Collections</div>
+            <div class="node-subtitle" style="color:#cbd5e1;">Instant SMS Receipts • Self-Service Passbook • Automated
+              Due Notifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Interactive Loan Estimator / Calculator Widget
+       ========================================================================= -->
+  <section class="section" id="calculator">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Interactive Tool</span>
+        <h2 class="section-title">
+          Loan & Collection <br>
+          <span class="gradient-text">Estimation Calculator</span>
+        </h2>
+        <p class="section-desc">
+          Test how FinanceMaster Pro instantly structures daily, weekly, and monthly finance plans.
+        </p>
+      </div>
+
+      <div class="calculator-card reveal-init">
+        <!-- Controls -->
+        <div class="calc-controls">
+          <!-- Frequency Toggle -->
+          <div class="calc-input-group">
+            <label class="form-label">Select Collection Frequency</label>
+            <div class="frequency-toggle-group">
+              <button class="freq-btn active" data-frequency="daily">Daily Finance</button>
+              <button class="freq-btn" data-frequency="weekly">Weekly Finance</button>
+              <button class="freq-btn" data-frequency="monthly">Monthly Finance</button>
+            </div>
+          </div>
+
+          <!-- Loan Amount Slider -->
+          <div class="calc-input-group">
+            <div class="calc-label-row">
+              <span>Loan Principal Amount</span>
+              <strong id="calcPrincipalVal" style="color:var(--color-primary); font-size:1.1rem;">₹20,000</strong>
+            </div>
+            <input type="range" class="calc-range-slider" id="calcPrincipalSlider" min="5000" max="200000" step="5000"
+              value="20000">
+            <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--color-slate-400);">
+              <span>₹5,000</span>
+              <span>₹1,00,000</span>
+              <span>₹2,00,000</span>
+            </div>
+          </div>
+
+          <!-- Duration Slider -->
+          <div class="calc-input-group">
+            <div class="calc-label-row">
+              <span>Tenure / Duration</span>
+              <strong id="calcDurationVal" style="color:var(--color-primary); font-size:1.1rem;">100 Days</strong>
+            </div>
+            <input type="range" class="calc-range-slider" id="calcDurationSlider" min="10" max="120" step="5"
+              value="100">
+          </div>
+
+          <!-- Interest Rate Slider -->
+          <div class="calc-input-group">
+            <div class="calc-label-row">
+              <span>Finance Charge / Interest Rate</span>
+              <strong id="calcInterestVal" style="color:var(--color-primary); font-size:1.1rem;">12%</strong>
+            </div>
+            <input type="range" class="calc-range-slider" id="calcInterestSlider" min="5" max="30" step="1" value="12">
+          </div>
+        </div>
+
+        <!-- Calculated Results Box -->
+        <div class="calc-result-box">
+          <div class="calc-result-highlight">
+            <div class="calc-result-sub" id="calcOutInstallmentLabel">Daily Collection Amount</div>
+            <div class="calc-result-val" id="calcOutInstallment">₹224</div>
+            <div style="font-size:0.8rem; color:#94a3b8; margin-top:4px;" id="calcOutInstallmentCount">100 Installments
+            </div>
+          </div>
+
+          <div class="calc-summary-rows">
+            <div class="calc-row-item">
+              <span>Principal Amount:</span>
+              <strong id="calcSummaryPrincipal">₹20,000</strong>
+            </div>
+            <div class="calc-row-item">
+              <span>Finance Interest / Profit:</span>
+              <strong id="calcOutTotalInterest" style="color:#34d399;">₹2,400</strong>
+            </div>
+            <div class="calc-row-item" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:0.5rem;">
+              <span style="font-weight:700; color:#FFFFFF;">Total Repayment Value:</span>
+              <strong id="calcOutTotalRepay" style="font-size:1.1rem; color:#38bdf8;">₹22,400</strong>
+            </div>
+          </div>
+
+          <a href="#demo-section" class="btn btn-primary btn-sm" style="margin-top:0.5rem; width:100%;">
+            Deploy This Scheme in Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. Mobile App Section & Smartphone Mockups
+       ========================================================================= -->
+  <section class="section section-alt" id="mobile-apps">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Native Field & Customer Apps</span>
+        <h2 class="section-title">
+          Your Finance Business <br>
+          <span class="gradient-text">in Your Pocket</span>
+        </h2>
+        <p class="section-desc">
+          Equip administrators, field agents, and borrowers with purpose-built mobile interfaces for on-the-go finance
+          operations.
+        </p>
+      </div>
+
+      <!-- App Switcher Filter Buttons -->
+      <div class="mobile-app-tabs reveal-init">
+        <button class="app-tab-btn active" data-app-role="all">All 3 Applications</button>
+        <button class="app-tab-btn" data-app-role="admin">Admin App</button>
+        <button class="app-tab-btn" data-app-role="agent">Agent App</button>
+        <button class="app-tab-btn" data-app-role="customer">Customer App</button>
+      </div>
+
+      <!-- Triple Phone Showcase -->
+      <div class="phones-showcase-grid reveal-init">
+        <!-- Phone 1: Admin App -->
+        <div class="phone-mockup-card" data-app-role="admin">
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-app-content">
+                <!-- App Header -->
+                <div class="phone-app-header">
+                  <div>
+                    <span style="font-size:0.65rem; color:#64748B;">Admin Portal</span>
+                    <div class="phone-app-title">FinanceMaster HQ</div>
+                  </div>
+                  <span class="badge badge-primary" style="font-size:0.65rem;">8 Branches</span>
+                </div>
+
+                <!-- App Stats -->
+                <div
+                  style="background:var(--grad-primary); color:#FFF; border-radius:14px; padding:12px; margin-bottom:10px;">
+                  <div style="font-size:0.65rem; opacity:0.85;">Total Active Recovery</div>
+                  <div style="font-size:1.25rem; font-weight:800; font-family:var(--font-heading);">₹1,85,500</div>
+                  <div style="font-size:0.65rem; opacity:0.9; margin-top:2px;">94% Target Achieved Today</div>
+                </div>
+
+                <!-- Admin Action list -->
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="font-weight:600; color:#1E293B;">🏢 Manage Branches</span>
+                    <span style="color:#2563EB; font-weight:700;">8 Active</span>
+                  </div>
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="font-weight:600; color:#1E293B;">👥 Field Agents</span>
+                    <span style="color:#059669; font-weight:700;">42 Online</span>
+                  </div>
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="font-weight:600; color:#1E293B;">📊 Loan Schemes</span>
+                    <span style="color:#6366F1; font-weight:700;">12 Active</span>
+                  </div>
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="font-weight:600; color:#1E293B;">⚠️ Defaulter Watch</span>
+                    <span style="color:#DC2626; font-weight:700;">34 Dues</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-label-box">
+            <div class="phone-label-title">Admin App</div>
+            <div class="phone-label-desc">Real-time overview of branches, cash in hand, and agent movements.</div>
+          </div>
+        </div>
+
+        <!-- Phone 2: Agent App -->
+        <div class="phone-mockup-card" data-app-role="agent">
+          <div class="phone-mockup-frame" style="box-shadow: 0 30px 70px -10px rgba(37,99,235,0.4);">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-app-content">
+                <!-- App Header -->
+                <div class="phone-app-header">
+                  <div>
+                    <span style="font-size:0.65rem; color:#64748B;">Agent: Vikram S.</span>
+                    <div class="phone-app-title">Route Collection</div>
+                  </div>
+                  <span class="badge badge-success" style="font-size:0.65rem;">North Hub</span>
+                </div>
+
+                <!-- Agent Today Progress -->
+                <div style="background:#0F172A; color:#FFF; border-radius:14px; padding:12px; margin-bottom:10px;">
+                  <div style="display:flex; justify-content:space-between;">
+                    <span style="font-size:0.65rem; color:#94A3B8;">Today's Collected</span>
+                    <span style="font-size:0.65rem; color:#34D399; font-weight:700;">38 / 40 Paid</span>
+                  </div>
+                  <div style="font-size:1.25rem; font-weight:800; color:#38BDF8; font-family:var(--font-heading);">
+                    ₹34,800</div>
+                  <div
+                    style="width:100%; height:4px; background:rgba(255,255,255,0.15); border-radius:4px; margin-top:6px;">
+                    <div style="width:95%; height:100%; background:#38BDF8; border-radius:4px;"></div>
+                  </div>
+                </div>
+
+                <!-- Collection Queue -->
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <div
+                    style="padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                      <div style="font-weight:700; color:#0F172A;">Rajesh Kumar</div>
+                      <div style="font-size:0.65rem; color:#64748B;">Daily Loan #84920</div>
+                    </div>
+                    <button class="btn btn-sm btn-primary" style="padding:4px 8px; font-size:0.7rem;">Collect
+                      ₹1.2k</button>
+                  </div>
+
+                  <div
+                    style="padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                      <div style="font-weight:700; color:#0F172A;">Meenakshi S.</div>
+                      <div style="font-size:0.65rem; color:#64748B;">Daily Loan #84922</div>
+                    </div>
+                    <button class="btn btn-sm btn-secondary" style="padding:4px 8px; font-size:0.7rem;">Due
+                      ₹850</button>
+                  </div>
+
+                  <div
+                    style="padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px; text-align:center;">
+                    <span style="font-weight:700; color:#2563EB; font-size:0.75rem;">+ Add New Borrower &
+                      Disburse</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-label-box">
+            <div class="phone-label-title">Agent App</div>
+            <div class="phone-label-desc">One-tap payments, customer routes, receipt printing, and pending alerts.</div>
+          </div>
+        </div>
+
+        <!-- Phone 3: Customer App -->
+        <div class="phone-mockup-card" data-app-role="customer">
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-app-content">
+                <!-- App Header -->
+                <div class="phone-app-header">
+                  <div>
+                    <span style="font-size:0.65rem; color:#64748B;">Borrower Portal</span>
+                    <div class="phone-app-title">My Loan Passbook</div>
+                  </div>
+                  <span class="badge badge-success" style="font-size:0.65rem;">Active Loan</span>
+                </div>
+
+                <!-- Customer Balance Card -->
+                <div
+                  style="background:linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%); color:#FFF; border-radius:14px; padding:12px; margin-bottom:10px;">
+                  <div style="font-size:0.65rem; opacity:0.85;">Remaining Loan Balance</div>
+                  <div style="font-size:1.25rem; font-weight:800; font-family:var(--font-heading);">₹6,400</div>
+                  <div style="font-size:0.65rem; opacity:0.9; margin-top:2px;">Total Paid: ₹13,600 / ₹20,000</div>
+                </div>
+
+                <!-- Customer Details -->
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="color:#64748B;">Next Due Date</span>
+                    <span style="font-weight:700; color:#0F172A;">Tomorrow, 11 AM</span>
+                  </div>
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="color:#64748B;">Daily Installment</span>
+                    <span style="font-weight:700; color:#2563EB;">₹200 / Day</span>
+                  </div>
+                  <div
+                    style="display:flex; justify-content:space-between; padding:8px 10px; background:#FFF; border:1px solid #E2E8F0; border-radius:10px;">
+                    <span style="color:#64748B;">Assigned Agent</span>
+                    <span style="font-weight:700; color:#0F172A;">Vikram S.</span>
+                  </div>
+                  <div
+                    style="padding:8px 10px; background:#EFF6FF; border:1px solid #BFDBFE; border-radius:10px; text-align:center;">
+                    <span style="font-weight:700; color:#1D4ED8; font-size:0.75rem;">📄 Download Payment Receipts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-label-box">
+            <div class="phone-label-title">Customer App</div>
+            <div class="phone-label-desc">Full loan transparency, payment history, installment schedules, and agent
+              details.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. Security & Governance Section
+       ========================================================================= -->
+  <section class="section" id="security">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Access Governance & Reliability</span>
+        <h2 class="section-title">
+          Built for Modern <br>
+          <span class="gradient-text">Finance Operations</span>
+        </h2>
+        <p class="section-desc">
+          Granular role-based controls, audit trails, and data isolation designed to keep your financial records
+          accurate, protected, and fully accounted for.
+        </p>
+      </div>
+
+      <div class="security-grid reveal-init">
+        <!-- 1. Role-Based Access -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="security-title">Role-Based Access</h3>
+          <p class="security-desc">Define granular privileges so admins, branch managers, and field collectors only
+            access what their job requires.</p>
+        </div>
+
+        <!-- 2. Secure Authentication -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="security-title">Secure Authentication</h3>
+          <p class="security-desc">Protect staff logins with verified multi-factor authentication, secure device
+            bindings, and automated session timeouts.</p>
+        </div>
+
+        <!-- 3. Controlled User Access -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            </svg>
+          </div>
+          <h3 class="security-title">Controlled User Access</h3>
+          <p class="security-desc">Instantly revoke or pause access for departed agents with single-click administrative
+            suspension.</p>
+        </div>
+
+        <!-- 4. Branch-Wise Access -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="security-title">Branch-Wise Access</h3>
+          <p class="security-desc">Ensure complete branch level data isolation so branch staff only view loans and
+            borrowers in their assigned territory.</p>
+        </div>
+
+        <!-- 5. Agent-Wise Access -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="security-title">Agent-Wise Access</h3>
+          <p class="security-desc">Agents only view assigned customer routes during operational collection hours with
+            detailed activity audit logs.</p>
+        </div>
+
+        <!-- 6. Protected Customer Information -->
+        <div class="security-card">
+          <div class="security-icon-box">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="security-title">Protected Customer Information</h3>
+          <p class="security-desc">Safeguard borrower identity proofs, phone records, and loan histories with strict
+            privacy guardrails.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. Frequently Asked Questions (FAQ Accordion)
+       ========================================================================= -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-header reveal-init">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">
+          Frequently Asked <br>
+          <span class="gradient-text">Questions</span>
+        </h2>
+        <p class="section-desc">
+          Everything you need to know about implementing FinanceMaster Pro for your daily, weekly, and monthly lending
+          operations.
+        </p>
+      </div>
+
+      <div class="faq-accordion reveal-init">
+        <!-- FAQ 1 -->
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span>Can FinanceMaster Pro handle both Daily and Weekly loans simultaneously?</span>
+            <div class="faq-toggle-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Yes, absolutely. FinanceMaster Pro is specifically architected to manage daily route collections (e.g. 100
+            days), weekly micro-finance batches, and monthly EMI loans under one centralized database with separate
+            route ledgers and dedicated reporting.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can field agents collect payments without active internet in rural routes?</span>
+            <div class="faq-toggle-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Yes! The Agent mobile app includes an Offline Mode that records payments, issues offline thermal/SMS
+            receipts, and automatically synchronizes all records back to the central server the moment network
+            connectivity resumes.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does the system prevent agent cash theft or reconciliation errors?</span>
+            <div class="faq-toggle-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Every transaction triggers an immediate SMS confirmation to the borrower's registered mobile number. At the
+            end of each day, the branch manager conducts a digital reconciliation scan that matches cash in hand against
+            recorded receipts before clearing the agent's route.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can we import our existing borrower records from Excel or physical books?</span>
+            <div class="faq-toggle-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Yes. Our onboarding specialists provide turnkey CSV/Excel migration tools and assistance to transfer your
+            borrower master records, loan histories, and outstanding balance schedules in less than 24 hours.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can branch managers only see their own branch data?</span>
+            <div class="faq-toggle-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Yes, strict branch-level isolation ensures managers and staff only view data belonging to their assigned
+            territory, while the Central Company Admin enjoys complete top-level visibility across all branches.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       15. Demo Request & Sales Contact Section
+       ========================================================================= -->
+  <section class="section" id="demo-section">
+    <div class="container">
+      <div class="demo-section-grid">
+        <!-- Sales Pitch Left Column -->
+        <div class="reveal-init">
+          <span class="section-tag">Schedule a Guided Walkthrough</span>
+          <h2 class="section-title" style="margin-bottom:1.25rem;">
+            Ready to Simplify Your <br>
+            <span class="gradient-text">Finance Business?</span>
+          </h2>
+          <p style="font-size:1.15rem; color:var(--color-slate-600); margin-bottom:2rem; line-height:1.7;">
+            Manage loans, collections, branches, agents and customers from one powerful platform. Experience how
+            FinanceMaster Pro can double your collection speed and eliminate manual mistakes.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2.5rem;">
+            <div style="display:flex; align-items:center; gap:0.85rem;">
+              <div
+                style="width:28px; height:28px; border-radius:50%; background:#ECFDF5; color:#059669; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                ✓</div>
+              <span style="font-weight:600; color:var(--color-slate-800);">1-on-1 personalized software
+                demonstration</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.85rem;">
+              <div
+                style="width:28px; height:28px; border-radius:50%; background:#ECFDF5; color:#059669; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                ✓</div>
+              <span style="font-weight:600; color:var(--color-slate-800);">Tailored scheme setup for daily, weekly &
+                monthly loans</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.85rem;">
+              <div
+                style="width:28px; height:28px; border-radius:50%; background:#ECFDF5; color:#059669; display:flex; align-items:center; justify-content:center; font-weight:bold;">
+                ✓</div>
+              <span style="font-weight:600; color:var(--color-slate-800);">Full data migration assistance from legacy
+                spreadsheets</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="#demo-form-target" class="btn btn-primary btn-lg">
+              Request a Demo
+            </a>
+            <a href="https://wa.me/919443884211?text=Hi%20FinanceMaster%20Pro%20Team%2C%20I%20would%20like%20to%20schedule%20a%20live%20demo"
+              target="_blank" class="btn btn-secondary btn-lg"
+              style="display:inline-flex; align-items:center; gap:8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z" />
+              </svg>
+              Talk to Sales
+            </a>
+          </div>
+        </div>
+
+        <!-- Demo Request Form Right Column -->
+        <div class="demo-form-card reveal-init" id="demo-form-target">
+          <!-- Active Form -->
+          <form class="demo-form" id="demoLeadForm">
+            <h3 style="font-size:1.4rem; color:var(--color-slate-900); margin-bottom:0.25rem;">
+              Request Your Free Demo
+            </h3>
+            <p style="font-size:0.875rem; color:var(--color-slate-500); margin-bottom:1rem;">
+              Fill in your business details and our solution architect will connect with you immediately on WhatsApp &
+              Email.
+            </p>
+
+            <div class="form-row-two">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Ramesh Patel" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="companyName">Company Name *</label>
+                <input type="text" id="companyName" class="form-input" placeholder="e.g. Patel Finance Corp" required>
+              </div>
+            </div>
+
+            <div class="form-row-two">
+              <div class="form-group">
+                <label class="form-label" for="phoneNumber">WhatsApp / Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="emailAddress">Email Address *</label>
+                <input type="email" id="emailAddress" class="form-input" placeholder="e.g. ramesh@patelfinance.com"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-row-two">
+              <div class="form-group">
+                <label class="form-label" for="branchCount">Number of Branches</label>
+                <select id="branchCount" class="form-select">
+                  <option value="1 Branch">1 Branch</option>
+                  <option value="2-5 Branches">2 to 5 Branches</option>
+                  <option value="6-15 Branches" selected>6 to 15 Branches</option>
+                  <option value="15+ Branches">15+ Branches</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="agentCount">Number of Agents</label>
+                <select id="agentCount" class="form-select">
+                  <option value="1-5 Agents">1 to 5 Agents</option>
+                  <option value="6-20 Agents">6 to 20 Agents</option>
+                  <option value="21-50 Agents" selected>21 to 50 Agents</option>
+                  <option value="50+ Agents">50+ Agents</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="messageText">Message / Specific Requirements</label>
+              <textarea id="messageText" class="form-textarea"
+                placeholder="Tell us about your daily/weekly collection volume, current software, or custom needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-top:0.5rem;">
+              Request a Demo
+            </button>
+          </form>
+
+          <!-- Success State (Email Dispatched) -->
+          <div class="demo-success-state" id="demoSuccessBox">
+            <div class="success-icon-badge">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 style="font-size:1.5rem; color:var(--color-slate-900); margin-bottom:0.5rem;">
+              Demo Request Sent!
+            </h3>
+            <p style="color:var(--color-slate-600); margin-bottom:1.5rem; max-width:380px;">
+              Thank you for requesting a demo. Your business details have been sent to
+              <strong>support@mediawavetech.com</strong>. Our product specialist will contact you via email shortly.
+            </p>
+
+            <button class="btn btn-secondary" id="btnResetDemoForm" style="width:100%;">
+              Submit Another Request
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       16. Digital Receipt Modal Popup
+       ========================================================================= -->
+  <div class="modal-overlay" id="receiptModalOverlay">
+    <div class="receipt-modal-card">
+      <div class="receipt-modal-header">
+        <div class="receipt-modal-title">
+          <img src="assets/fmp_emblem.png" alt="Icon" width="22" height="22">
+          <span>Digital Payment Receipt</span>
+        </div>
+        <button class="modal-close-btn" id="btnCloseReceiptModal" aria-label="Close modal">×</button>
+      </div>
+
+      <div class="receipt-modal-body">
+        <div class="receipt-amount-banner">
+          <div class="receipt-amount-label">Verified Payment Collected</div>
+          <div class="receipt-amount-val" id="receiptModalAmount">₹1,200</div>
+          <div class="receipt-amount-status">
+            <span>●</span> Successful Digital Handshake
+          </div>
+        </div>
+
+        <div class="receipt-meta-grid">
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Transaction ID</span>
+            <span class="receipt-meta-value" id="receiptModalTxnId">TXN-9842109</span>
+          </div>
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Timestamp</span>
+            <span class="receipt-meta-value" id="receiptModalDueDate">Today, 11:30 AM</span>
+          </div>
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Borrower Account</span>
+            <span class="receipt-meta-value" id="receiptModalBorrower">Rajesh Kumar</span>
+          </div>
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Loan Scheme</span>
+            <span class="receipt-meta-value" id="receiptModalLoanId">LN-84920 (Daily Finance)</span>
+          </div>
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Collecting Agent</span>
+            <span class="receipt-meta-value" id="receiptModalAgent">Vikram Sharma (North Hub)</span>
+          </div>
+          <div class="receipt-meta-item">
+            <span class="receipt-meta-label">Remaining Balance</span>
+            <span class="receipt-meta-value" id="receiptModalBalance" style="color:var(--color-primary);">₹5,600</span>
+          </div>
+        </div>
+
+        <div
+          style="background:var(--color-slate-50); border:1px solid var(--color-slate-200); border-radius:var(--radius-md); padding:0.75rem; font-size:0.75rem; color:var(--color-slate-500); text-align:center;">
+          🔒 Digitally signed & verified by FinanceMaster Pro Cloud Engine. Instant SMS sent to borrower.
+        </div>
+      </div>
+
+      <div class="receipt-modal-footer">
+        <button class="btn btn-primary" id="btnPrintReceipt" style="flex:1;">
+          🖨️ Print Thermal Receipt
+        </button>
+        <button class="btn btn-secondary"
+          onclick="document.getElementById('receiptModalOverlay').classList.remove('active');" style="flex:1;">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       17. Footer
+       ========================================================================= -->
+  <footer class="saas-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="nav-brand">
+            <div class="footer-brand-badge">
+              <img src="assets/FMP.png" alt="FinanceMaster Pro" height="38">
+            </div>
+          </a>
+          <p class="footer-desc">
+            Smart SaaS platform built for daily, weekly and monthly finance companies to manage branches, agents,
+            borrowers, and collections with ease.
+          </p>
+          <div class="footer-status-pill">
+            <span class="badge-dot" style="background:#34d399;"></span>
+            <span>All Systems Operational • 99.98% Uptime</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: Product -->
+        <div>
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-links-list">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#solutions" class="footer-link">Role Solutions</a></li>
+            <li><a href="#schemes" class="footer-link">Finance Schemes</a></li>
+            <li><a href="#dashboard" class="footer-link">Live Dashboard</a></li>
+            <li><a href="#collections" class="footer-link">Daily Collection Log</a></li>
+            <li><a href="#calculator" class="footer-link">Loan Estimator</a></li>
+            <li><a href="#mobile-apps" class="footer-link">Mobile Apps</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: Solutions -->
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="#solutions" class="footer-link">Company Admin</a></li>
+            <li><a href="#solutions" class="footer-link">Field Agents</a></li>
+            <li><a href="#solutions" class="footer-link">Borrower Portal</a></li>
+            <li><a href="#multi-branch" class="footer-link">Multi-Branch System</a></li>
+            <li><a href="#security" class="footer-link">Security & Governance</a></li>
+            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: Contact & Demo -->
+        <div>
+          <h4 class="footer-col-title">Get Started</h4>
+          <ul class="footer-links-list">
+            <li><a href="#demo-section" class="footer-link">Request Demo</a></li>
+            <li><a href="https://wa.me/91 6369153235" target="_blank" class="footer-link">WhatsApp Sales (+91 63691
+                53235)</a></li>
+            <li><a href="tel:+91 6369153235" class="footer-link">Call: +91 63691 53235</a></li>
+            <li><a href="mailto:support@mediawavetech.com" class="footer-link">support@mediawavetech.com</a></li>
+            <li><a href="#security" class="footer-link">Privacy & Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 FinanceMaster Pro. Developed by MediaWaveTech.
+        </div>
+        <div style="color:var(--color-slate-500); font-size:0.8rem;">
+          Designed for Daily, Weekly & Monthly Finance Enterprises.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Connect Widget -->
+  <a href="https://wa.me/916369153235?text=Hi%20FinanceMaster%20Pro%20Team%2C%20I%20would%20like%20to%20get%20more%20information%20about%20the%20SaaS%20platform"
+    target="_blank" class="floating-wa-btn" aria-label="Chat on WhatsApp">
+    <span class="wa-pulse-dot"></span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z" />
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- Javascript Modules -->
+  <script src="js/mock-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

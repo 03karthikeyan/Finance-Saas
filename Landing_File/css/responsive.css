@@ -1,0 +1,225 @@
+/* ==========================================================================
+   FinanceMaster Pro - Responsive Breakpoints & Optimizations
+   ========================================================================== */
+
+/* Large Desktop / High-DPI screens */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
+
+/* Tablets & Mid-size Desktops (max-width: 1080px) */
+@media (max-width: 1080px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .btn-desktop-only {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-indicators {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-visual {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scheme-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hierarchy-branch-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calculator-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .phones-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .security-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .demo-section-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-indicators {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-hero-pill {
+    display: none;
+  }
+
+  .how-it-works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hierarchy-branch-row {
+    grid-template-columns: 1fr;
+  }
+
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-two {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .dashboard-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-search-input {
+    width: 100%;
+  }
+
+  .table-filter-pills {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .demo-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .calculator-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .calc-result-val {
+    font-size: 1.85rem;
+  }
+}

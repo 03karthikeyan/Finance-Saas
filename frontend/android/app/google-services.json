@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622105352960",
+    "project_id": "financemaster-pro-85287",
+    "storage_bucket": "financemaster-pro-85287.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622105352960:android:11659d5c6acafeedf3f1e5",
+        "android_client_info": {
+          "package_name": "com.financesaas.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxpQOuG3c0iGMDrJ6WKJma7b0iGpwKU1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
